@@ -1,0 +1,6 @@
+if (@condition) {
+    @exprM
+} else {
+    @exprS
+}
+ 
