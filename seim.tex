@@ -15,7 +15,12 @@
 \usepackage{minted}
 \usepackage{caption}
 \usepackage{fancybox}
-\newfontfamily{\cyrillicfonttt}{CMU Serif}
+\newfontfamily{\cyrillicfonttt}{DejaVu Serif}
+
+\makeatletter
+\define@key{blx@lbx}{fromjapanese}{\blx@defstring{fromjapanese}{#1}}
+\define@key{blx@lbx}{langjapanese}{\blx@defstring{langjapanese}{#1}}
+\makeatother
 
 \lstset{
 basicstyle=\small,
@@ -266,5 +271,3 @@ a.podkopaev@2009.spbu.ru}
 
 \printbibliography
 \end{document}
-
-
