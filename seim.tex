@@ -15,6 +15,7 @@
 \usepackage{minted}
 \usepackage{caption}
 \usepackage{fancybox}
+%% \usepackage{cite}
 \newfontfamily{\cyrillicfonttt}{DejaVu Serif}
 
 \makeatletter
@@ -34,12 +35,14 @@ language=java
 }
 
 %% Bibliography file
-\addbibresource{seim.bib}
+%% \addbibresource{seim.bib}
 
 
 % If you need to correct hyphenations, add them here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
+\newcommand{\igo}[1]{{\color{red}({Игорь:\ #1})}\marginpar{$\checkmark$}}
+\newcommand{\app}[1]{{\color{blue}({Антон:\ #1})}\marginpar{$\checkmark$}}
 
 \begin{document}
 %
@@ -81,7 +84,8 @@ a.podkopaev@2009.spbu.ru}
 подходы к форматирования кода. 
 Одним из них является форматирование на основе синтаксических шаблонов. 
 Оно позволяет задавать стиль форматирования с помощью образца кода. % фразу переделать?
-Для апробации этого способа был создан принтер-плагин\cite{podkopaev:diploma} для интегрированной среды разработки IntelliJ IDEA.
+Для апробации этого способа был создан принтер-плагин%
+\cite{podkopaevDiploma} для интегрированной среды разработки IntelliJ IDEA.
 % * <podkoav239@gmail.com> 23:20:29 15 Apr 2016 UTC+0300:
 % Убрать ссылки из аннотации.
 
@@ -269,5 +273,24 @@ a.podkopaev@2009.spbu.ru}
 % references section
 \nocite{*}
 
-\printbibliography
+\begin{thebibliography}{4}
+
+\bibitem{while}
+  А.Подкопаев, А.Коровянский, И.Озерных.
+  Языконезависимое форматирование текстов программ
+  на основе сопоставления с образцом и синтаксических шаблонов
+  // НТВ СПбГПУ 4' (224), 2015.
+
+\bibitem{podkopaevDiploma}
+  А.Подкопаев. Полиномиальной сложности оптимальные принтер-комбинаторы с выбором
+  // Дипломная работа, МатМех СПбГУ, 2014.
+
+\bibitem{maintenance}
+  G.Alkhatib.
+  The maintenance problem of application software:
+an empirical analysis //
+  Journal of Software Maintenance, 4(2):83–104, 1992.
+
+\end{thebibliography}
+
 \end{document}
