@@ -1,4 +1,8 @@
-<..>
+﻿{   <..>
+    fileClass="org.intellij.whileLang.WhileFile"
+    fileSubtrees="procList, stmtList"
+    <..>
+}
 whileFile   ::= proc_list stmt_list
 stmt_list   ::= stmt*
 proc_list   ::= procedure*
