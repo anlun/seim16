@@ -1,6 +1,6 @@
 ﻿{   <..>
     fileClass="org.intellij.whileLang.WhileFile"
-    fileSubtrees="procList, stmtList"
+    fileSubtrees="procList, stmtList"
     <..>
 }
 whileFile   ::= proc_list stmt_list
